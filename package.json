@@ -9,9 +9,11 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "npm run build-storybook",
-    "storycap": "npx storycap http://localhost:6006",
-    "storycap2": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006"
+    "storybook:build": "storybook build",
+    "storycap": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006",
+    "vrt:snapshot": "storycap --serverCmd \"npx http-server storybook-static -a localhost -p 6006\" http://localhost:6006",
+    "vrt:run": "reg-suit run"
+
   },
   "dependencies": {
     "react": "^18.2.0",
