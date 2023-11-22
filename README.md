@@ -31,4 +31,5 @@ If you are developing a production application, we recommend updating the config
 Github Actionsが起動し、vrt-suit実行
 S3のデータと比較し、差分があればPR上でコメントされる
 レビューでアプルーブされるか、mainと差分がなくなると指摘されなくなる
+(AWSバケットを削除したため現在は使用不可)
 
